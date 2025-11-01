@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # {{NOMBRE_EMPRESA}} - Sitio Web Corporativo
 
 Sitio web corporativo minimalista y elegante construido con Next.js, TypeScript, Tailwind CSS y Framer Motion.
@@ -170,3 +171,6 @@ Para soporte, contacta a: contacto@tuempresa.com
 - [ ] Añadir Google Analytics (opcional)
 - [ ] Configurar dominio personalizado
 - [ ] Revisar y actualizar contenido en /data
+=======
+# StellaWeb
+>>>>>>> 23dfaff303e092a5e302e2b730252e6416b1c780

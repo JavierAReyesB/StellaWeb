@@ -17,7 +17,7 @@ import {
 } from "lucide-react"
 import { Button } from "../ui/button"
 
-// 👇 ahora los servicios viven aquí dentro (CLIENTE), no vienen del server
+// los servicios viven aquí dentro (CLIENTE)
 const services: {
   icon: LucideIcon
   title: string
@@ -70,7 +70,7 @@ const services: {
 ]
 
 export function ServicesCarousel() {
-  // como ya sabemos cuántos hay (7), podemos dejar 2 de inicio
+  // como ya sabes: empezabas en 2
   const [activeIndex, setActiveIndex] = useState(2)
 
   const nextSlide = () => {
@@ -107,6 +107,7 @@ export function ServicesCarousel() {
                   onClick={() => !isActive && setActiveIndex(index)}
                   style={{
                     cursor: isActive ? "default" : "pointer",
+                    // esto ya lo tenías
                     pointerEvents: Math.abs(offset) > 2 ? "none" : "auto",
                   }}
                 >

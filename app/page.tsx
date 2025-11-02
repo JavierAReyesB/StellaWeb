@@ -8,7 +8,6 @@ import { Section } from "../components/ui/Section"
 import { Heading } from "../components/ui/Heading"
 import { Badge } from "../components/ui/badge"
 import { Button } from "../components/ui/button"
-// ⛔️ QUITADO: import { services } from "../data/services"
 import { testimonials } from "../data/testimonials"
 import { ArrowRight } from "lucide-react"
 import { ProcessSteps } from "../components/process/ProcessSteps"
@@ -43,7 +42,7 @@ export default function HomePage() {
       <main>
         <Hero />
 
-        {/* Benefits/Services Section */}
+        {/* Services */}
         <Section id="servicios" className="bg-muted/30">
           <div className="w-full">
             <div className="text-center mb-12 px-4">
@@ -56,12 +55,11 @@ export default function HomePage() {
               </p>
             </div>
 
-            {/* 👇 ahora sin props */}
             <ServicesCarousel />
           </div>
         </Section>
 
-        {/* Process Section */}
+        {/* Process */}
         <Section className="bg-muted/30">
           <Container>
             <div className="text-center mb-12">
@@ -75,7 +73,7 @@ export default function HomePage() {
           </Container>
         </Section>
 
-        {/* Testimonials Section */}
+        {/* Testimonials */}
         <Section className="bg-muted/30">
           <Container>
             <div className="text-center mb-12">
@@ -99,7 +97,7 @@ export default function HomePage() {
           </Container>
         </Section>
 
-        {/* Final CTA Section */}
+        {/* CTA */}
         <Section>
           <Container>
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand to-brand/80 p-12 text-center text-brand-foreground">
@@ -114,7 +112,6 @@ export default function HomePage() {
                   <Button size="lg" variant="secondary" asChild>
                     <a href="/contacto">
                       Hablar con nosotros
-                      <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
                   </Button>
                   <Button
